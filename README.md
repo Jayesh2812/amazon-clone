@@ -1,4 +1,4 @@
-###Amazon-Clone 
+<h1>Amazon-Clone </h1>
 
 Hope you are doing great !!
 Currently I am learning ReactJS and tried my hands on making an amazon clone with it.
@@ -6,12 +6,14 @@ Currently I am learning ReactJS and tried my hands on making an amazon clone wit
 Have a Look at my clone <a href="https://clone-7b0cb.web.app/">HERE </a>
 
 In this WebApp, I learned about 
--> Client side routing using "react-router-dom" 
--> "useContext" API to prevent props-drilling
--> Redirect without refreshing
--> Using Firebase as backend and Deployment using Firebase as well
+<ul>
+<li> Client side routing using "react-router-dom" </li>
+<li> "useContext" API to prevent props-drilling</li>
+<li> Redirect without refreshing</li>
+<li> Using Firebase as backend and Deployment using Firebase as well</li>
+</ul>
 
 Webapp mainly consists of three pages for now, viz
--> Login
--> Home
--> Checkout
+<li> Login</li>
+<li> Home</li>
+<li> Checkout</li>
