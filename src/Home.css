@@ -1,0 +1,15 @@
+.home{
+    background-color: rgb(226, 226, 226);
+}
+.home__banner{
+    width:100%;
+    max-width:1500px;
+    mask-image:linear-gradient(black , rgba(0, 0, 0, 0));
+    margin-bottom:-13vw;
+}
+.home__productRow{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:0 .3em;
+}
