@@ -14,8 +14,11 @@ function CheckoutProduct({id, title, image, pricing, rating, count}) {
 
     // 
     const decreaseCount=()=>{
-        if(count === 1){
-            removeFromBasket()
+        // if(count === 1){
+        //     removeFromBasket()
+        //     return
+        // }
+        if(count===0){
             return
         }
         dispatch(
