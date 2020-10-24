@@ -4,7 +4,7 @@ import StarHalfRoundedIcon from '@material-ui/icons/StarHalfRounded';
 import StarRoundedIcon from '@material-ui/icons/StarRounded';
 import './CheckoutProduct.css'
 
-function CheckoutProduct({id, title, image, pricing, rating}) {
+function CheckoutProduct({id, title, image, pricing, rating, count}) {
     const [{basket} ,dispatch] = useStateValue()
     let fractionalRating;
     if (rating % 1 !== 0) {
@@ -13,11 +13,31 @@ function CheckoutProduct({id, title, image, pricing, rating}) {
     }
 
     // 
+    const decreaseCount=()=>{
+        if(count === 1){
+            removeFromBasket()
+            return
+        }
+        dispatch(
+            {
+                type:"DECREASE_PRODUCT_COUNT",
+                id:id
+            }
+        )
+    }
+    const increaseCount=()=>{
+        dispatch(
+            {
+                type:"INCREASE_PRODUCT_COUNT",
+                id:id
+            }
+        )
+    }
     const removeFromBasket =()=>{
         dispatch(
             {
                 type:"REMOVE_FROM_BASKET",
-                id: id,
+                id: id
             }
         )
     }
@@ -39,9 +59,9 @@ function CheckoutProduct({id, title, image, pricing, rating}) {
                 </p>
                 <button onClick={removeFromBasket}>Remove from Basket</button>
                 <div className="checkoutProduct__count">
-                    <button>+</button>
-                    <span>{0}</span>
-                    <button>-</button>
+                    <button onClick={increaseCount}>+</button>
+                    <span>{count}</span>
+                    <button onClick={decreaseCount}>-</button>
                 </div>
             </div>
         </div>

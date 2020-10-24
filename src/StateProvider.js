@@ -14,11 +14,5 @@ export const useStateValue = () =>useContext(StateContext)
 
 export const getBasketTotal = (basket) =>{
     return(
-    basket.reduce((amount, item) => item.pricing + amount,0)
+    basket.reduce((amount, item) => item.count * item.pricing + amount,0)
 )}
-
-export const getProductCount=(product_id) =>{
-    return(
-        0
-    )
-}

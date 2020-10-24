@@ -30,6 +30,7 @@ function Checkout() {
                         image={item.image}
                         pricing={item.pricing}
                         rating={item.rating}
+                        count ={item.count}
                     />
                     </>
                 ))}

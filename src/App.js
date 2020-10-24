@@ -43,11 +43,12 @@ function App() {
             <Login/>
           </Route>
           <Route path="/checkout">
+            {!user && <Redirect to='/login'/>}
             <Header/>
             <Checkout/>
-            {/* {!user && <Redirect to='/login'/>} */}
           </Route>
           <Route path="/">
+            {!user && <Redirect to='/login'/>}
             <Header/>
             <Home/>
           </Route>
