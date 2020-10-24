@@ -7,7 +7,7 @@
 .firebase
 .firebaserc
 firebase.json
-/.github
+.github
 # testing
 /coverage
 
