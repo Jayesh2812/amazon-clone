@@ -3,7 +3,7 @@
 Hope you are doing great !!
 Currently I am learning ReactJS and tried my hands on making an amazon clone with it.
 
-Have a Look at my clone <a href="https://clone-7b0cb.web.app/">HERE </a>
+Have a Look at my clone <a target="_blank" href="https://clone-7b0cb.web.app/">HERE </a>
 
 In this WebApp, I learned about 
 <ul>
